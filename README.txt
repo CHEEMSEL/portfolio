@@ -1,12 +1,12 @@
 
 # Quang – Portfolio Site  
-**Live URL (GitHub Pages):** https://CHEEMSEL.github.io/portfolio/
+**Live URL (GitHub Pages):** https://github.com/CHEEMSEL/portfolio
 
 ## 1. Objective
 A single-page portfolio coded from scratch with **valid HTML5**, **responsive CSS**, and **four extras** as required.
 
 ## 2. W3C Compliance
-Screenshot saved: `/screens/w3c-validator.png`  
+Screenshot saved: https://github.com/CHEEMSEL/portfolio/blob/main/Result.png
 
 
 ## 3. Responsiveness
@@ -39,3 +39,4 @@ Project cards switch from 1-column → 2-column → 4-column via `auto-fit` grid
 git clone https://github.com/CHEEMSEL/portfolio.git
 cd portfolio
 # open index.html
+
