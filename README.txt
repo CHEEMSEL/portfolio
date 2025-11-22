@@ -28,7 +28,6 @@ Project cards switch from 1-column → 2-column → 4-column via `auto-fit` grid
 4. **Dark-mode toggle** – animated switch + `localStorage` persistence
 
 ## 6. Image Credits (all Unsplash, royalty-free)
-- Hero: https://unsplash.com/photos/ndjyaOp0fOc  
 - Project 1: https://unsplash.com/photos/1L30xJPkJI0  
 - Project 2: https://unsplash.com/photos/b4ADd5AaG5Y  
 - Project 3: https://unsplash.com/photos/4qSb_FWhHKs  
@@ -39,4 +38,5 @@ Project cards switch from 1-column → 2-column → 4-column via `auto-fit` grid
 git clone https://github.com/CHEEMSEL/portfolio.git
 cd portfolio
 # open index.html
+
 
