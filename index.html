@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quang – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a class="logo" href="#home" aria-label="Home">
+        <svg width="120" height="40" viewBox="0 0 120 40" aria-hidden="true">
+          <text x="0" y="30" fill="var(--clr-primary)" font-size="30" font-family="cursive">Qu</text>
+        </svg>
+      </a>
+
+      <!-- EXTRA 2 : Pure-CSS hamburger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label"><span></span><span></span><span></span></label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Hi, I'm <span class="accent">Quang</span></h1>
+        <p>Front-End Developer & UI Designer</p>
+        <a href="#projects" class="btn">See my work</a>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="container two-col">
+        <div>
+          <h2>About Me</h2>
+          <p>I craft responsive, accessible websites from scratch. When I'm not coding you'll find me with a camera or a coffee—sometimes both.</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="project-grid">
+          <article class="card">
+            <a href="#proj1">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=60" alt="Project 1">
+              <h3>Finance Dashboard</h3>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="#proj2">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=60" alt="Project 2">
+              <h3>Data-Viz Site</h3>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="#proj3">
+              <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=60" alt="Project 3">
+              <h3>E-Commerce Store</h3>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="#proj4">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Project 4">
+              <h3>SaaS Landing Page</h3>
+            </a>
+          </article>
+        </div>
+        <div id="proj1" class="modal"><a href="#" class="modal-close">&times;</a>
+          <div class="modal-content">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Finance Dashboard">
+            <h3>Finance Dashboard</h3>
+            <p>React + D3.js, fully responsive. Track expenses in real-time.</p>
+          </div>
+        </div>
+        <div id="proj2" class="modal"><a href="#" class="modal-close">&times;</a>
+          <div class="modal-content">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Data Viz">
+            <h3>Interactive Data-Viz</h3>
+            <p>SVG animations, accessibility first, 98 Lighthouse score.</p>
+          </div>
+        </div>
+        <div id="proj3" class="modal"><a href="#" class="modal-close">&times;</a>
+          <div class="modal-content">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1200&q=80" alt="E-Commerce">
+            <h3>E-Commerce Store</h3>
+            <p>Next.js + Snipcart, Stripe checkout, i18n ready.</p>
+          </div>
+        </div>
+        <div id="proj4" class="modal"><a href="#" class="modal-close">&times;</a>
+          <div class="modal-content">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="SaaS">
+            <h3>SaaS Landing Page</h3>
+            <p>Static generation, 100/100 Lighthouse, animated illustrations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2>Skills & Tools</h2>
+        <ul class="skills-list">
+          <li>HTML5</li><li>CSS3 / SCSS</li><li>JavaScript (ES6+)</li>
+          <li>React</li><li>Git & GitHub</li><li>Figma</li>
+          <li>Accessibility</li><li>Performance</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Let's connect</h2>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="theme-checkbox">
+            <input type="checkbox" id="theme-checkbox">
+            <span class="slider round"></span>
+          </label>
+          <em>Dark mode</em>
+        </div>
+
+        <form action="https://httpbin.org/post" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" rows="4" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span>  Quang. Built with HTML & CSS only.(with a bit JS)</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('theme-checkbox');
+    const stored = localStorage.getItem('darkMode');
+    if (stored === 'enabled') {
+      document.body.classList.add('dark');
+      toggle.checked = true;
+    }
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark') ? 'enabled' : 'disabled');
+    });
+  </script>
+</body>
+</html>
